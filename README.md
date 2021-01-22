@@ -3,6 +3,8 @@
 
 ## MAIN POINTS
 
+![Demo](https://github.com/Esedicol/RedBloodCell_Analyzer/blob/main/BCA.png)
+
 <ol>
   <li>Used JavaFx and XML to build the application interface</li>
   <li>UI consist of three buttons:
