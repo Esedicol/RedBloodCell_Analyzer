@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity"
+	minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0"
+	prefWidth="600.0" xmlns="http://javafx.com/javafx/8"
+	xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+	<children>
+		<TabPane prefHeight="350.0" prefWidth="600.0"
+			tabClosingPolicy="UNAVAILABLE">
+			<tabs>
+				<Tab text="BCA APP">
+					<content>
+						<AnchorPane prefHeight="200.0" prefWidth="200.0">
+							<children>
+								<ImageView fx:id="imageView2" fitHeight="200.0"
+									fitWidth="280.0" layoutX="310.0" layoutY="70.0"
+									pickOnBounds="true" preserveRatio="true" />
+									
+								<ImageView fx:id="imageView1" fitHeight="200.0"
+									fitWidth="280.0" layoutX="10.0" layoutY="70.0"
+									pickOnBounds="true" preserveRatio="true" />
+
+								<Button text="Open File" fx:id="button1" layoutX="160.0"
+									layoutY="15.0" onMouseClicked="#openImage" />	
+									
+								<Button text="Run Analyer" fx:id="button2"
+									layoutX="250.0" layoutY="15.0" onMouseClicked="#processImage" />
+																		
+								<Button text="Tri Colour" fx:id="button3"
+									layoutX="350.0" layoutY="15.0" onMouseClicked="#processImage" />
+
+								<Slider fx:id="slider2" blockIncrement="1.0"
+									layoutX="1.0" layoutY="50.0" majorTickUnit="1.0" max="5.0"
+									orientation="VERTICAL" showTickLabels="true"
+									showTickMarks="true" value="2.0" />
+								<Slider fx:id="slider3" layoutX="30.0" layoutY="50.0"
+									majorTickUnit="50.0" max="200.0" showTickLabels="true"
+									showTickMarks="true" />
+
+								<Text fx:id="display1" layoutX="20.0" layoutY="300.0"
+									strokeType="OUTSIDE" strokeWidth="0.0" text="Total: "
+									textAlignment="CENTER">
+									<font>
+										<Font size="15.0" />
+									</font>
+								</Text>
+								<Text fx:id="display2" layoutX="150.0" layoutY="300.0"
+									strokeType="OUTSIDE" strokeWidth="0.0" text="No. Red Cells : "
+									textAlignment="CENTER">
+									<font>
+										<Font size="15.0" />
+									</font>
+								</Text>
+								
+								<Text fx:id="display3" layoutX="350.0" layoutY="300.0"
+									strokeType="OUTSIDE" strokeWidth="0.0" text="No. White Cells : "
+									textAlignment="CENTER">
+									<font>
+										<Font size="15.0" />
+									</font>
+								</Text>
+
+							</children>
+						</AnchorPane>
+					</content>
+				</Tab>
+			</tabs>
+		</TabPane>
+	</children>
+</AnchorPane>
